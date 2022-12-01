@@ -3,14 +3,13 @@
 // If `cb` returns `true` then return that element.
 // Return `undefined` if no elements pass the truth test.
 
-
-function find(array,callBack) {
-    for (let index =0 ; index < array.length ; index++) {
-        if (callBack(array[index])) {
-            return array[index];
-        }
+function find(array, callBack) {
+  for (let index = 0; index < array.length; index++) {
+    if (callBack(array[index])) {
+      return array[index];
     }
-    return undefined;
+  }
+  return undefined;
 }
 
 module.exports = find;

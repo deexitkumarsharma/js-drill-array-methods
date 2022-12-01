@@ -3,13 +3,12 @@
 // Produces a new array of values by mapping each value in list through a transformation function (iteratee).
 // Return the new array.
 
-function map(elements,cb){
-    let result=[]
-    for(let index=0;index<elements.length;index++){
-        result.push(cb(elements[index]));
-    }
-    return result;
+function map(elements, cb) {
+  let result = [];
+  for (let index = 0; index < elements.length; index++) {
+    result.push(cb(elements[index]));
+  }
+  return result;
 }
 
-
-module.exports=map;
+module.exports = map;
